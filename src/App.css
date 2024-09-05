@@ -178,6 +178,56 @@ header {
   font-weight: 400;
   font-style: normal;
 }
+/*CONTACT*/
+.contact {
+  min-height: 100vh;
+  margin: 0px;
+  background-color: #d6bd987a;
+}
+
+.contact h2 {
+  display: block;
+  text-align: center;
+  padding-top: 100px;
+  font-size: clamp(2rem, 5vw, 6rem);
+  font-family: "Unna", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--dark-blue);
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0% auto;
+  padding: 0px 30px;
+}
+
+.contact form input, .contact form textarea {
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-family: "Unna", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact form input[type="submit"] {
+  display: block;
+  width: 100%;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.contact form input[type="submit"]:hover {
+  background-color: var(--dark-gray);
+}
+.contact form input[type="submit"]:focus{
+  background-color: var(--medium-green);
+}
 /*FOOTER*/
 
 footer {
