@@ -9,7 +9,6 @@
 }
 #root {
   max-width: 1980px;
-  margin: 0 auto;
 }
 /*HEADER*/
 header {
@@ -18,7 +17,7 @@ header {
   padding: 0px;
   margin: 0px;
   background-color: var(--dark-blue);
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 1000; 
@@ -114,6 +113,75 @@ header {
       transition: 0.2s;
   }
 }
+/*HERO*/
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.bg1 {
+  background-color: var(--medium-green);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+  padding: 60px 0;
+}
+
+@media only screen and (max-width: 768px){
+  .hero-title{
+      font-size: clamp(5rem, 4vw, 20rem);
+  }
+  .hero-subtitle{
+      font-size: clamp(2rem,3vw,6rem);
+  }
+  .viewBtn{
+      font-size: clamp(1.7rem,2vw,4rem);
+  }
+}
+.hero-title{
+  font-size: clamp(5rem, 10vw, 20rem);
+  margin: 0px auto;
+  font-family: "Unna", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: -200px;
+}
+.hero-subtitle{
+  font-size: clamp(2rem,3vw,6rem);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 15px;
+}
+.viewBtn{
+  font-size: clamp(1.8rem,2vw,4rem);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 5px 6px;
+}
+.viewBtn:hover{
+  text-decoration: none;
+}
+.viewBtn:focus{
+  background-color: var(--medium-green);
+}
+/*ABOUT*/
+#about-me {
+  min-height: 100vh;
+  background-color: var(--white);
+  padding: 60px 20px;
+  margin: 0px auto; 
+}
+
 /*PORTFOLIO*/
 #portfolio {
   text-align: center;
@@ -137,7 +205,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   place-items: center;
   gap: 20px;
-  padding: 80px 0px;
+  padding: 10px 0px;
   margin: 0% auto;
   color: var(--white);
 }
@@ -235,6 +303,7 @@ footer {
   color: var(--white);
   text-align: center;
   padding: 20px 0;
+  width: 100%;
 }
 
 footer p {
