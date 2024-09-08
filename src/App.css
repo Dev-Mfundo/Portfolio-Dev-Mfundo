@@ -10,6 +10,14 @@
 #root {
   max-width: 1980px;
 }
+.construction{
+  place-self: center;
+  display: block;
+  margin: 17% auto;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(3rem, 6vw, 9rem);
+}
 /*HEADER*/
 header {
   display: flex;
