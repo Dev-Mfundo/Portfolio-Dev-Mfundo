@@ -10,6 +10,7 @@
 #root {
   max-width: 1980px;
   background-color: #677D6A;
+  min-height: 100vh;
 }
 .construction{
   place-self: center;
