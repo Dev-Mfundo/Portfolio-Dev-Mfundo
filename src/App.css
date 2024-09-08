@@ -9,6 +9,7 @@
 }
 #root {
   max-width: 1980px;
+  background-color: #677D6A;
 }
 .construction{
   place-self: center;
