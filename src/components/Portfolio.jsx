@@ -1,3 +1,5 @@
+import { memo } from 'react
+
 function Portfolio(){
     return(
         <div id="portfolio" className="portfolio parallax bg2">
@@ -63,4 +65,4 @@ function Portfolio(){
     </div>
     )
 }
-export default Portfolio;
+export default memo(Portfolio);
