@@ -1,3 +1,5 @@
+import { memo } from 'react
+
 function Hero(){
     return(
     <hero>
@@ -13,4 +15,4 @@ function Hero(){
     </hero>
     )
 }
-export default Hero;
+export default memo(Hero);
