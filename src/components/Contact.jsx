@@ -1,3 +1,5 @@
+import { memo } from 'react
+
 function Contact(){
     return(
     <div id="contact" className="contact">
@@ -11,4 +13,4 @@ function Contact(){
     </div>
     )
 }
-export default Contact;
+export default memo(Contact);

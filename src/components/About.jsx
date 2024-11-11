@@ -1,3 +1,5 @@
+import { memo } from 'react
+
 function Hero(){
     return(
         <div id="about-me">
@@ -19,4 +21,4 @@ function Hero(){
     </div>
     )
 }
-export default Hero;
+export default memo(Hero);

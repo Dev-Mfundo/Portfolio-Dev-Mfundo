@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { memo, useState } from 'react';
 
 function Header() {
     const [isNavVisible, setNavVisibility] = useState(false);
@@ -26,4 +26,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default memo(Header);
